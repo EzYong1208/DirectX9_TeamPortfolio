@@ -1,0 +1,43 @@
+#pragma once
+
+#include "Client_Defines.h"
+#include "Item.h"
+
+BEGIN(Client)
+
+class CItem_Armor_Down : public CItem
+{
+public:
+	typedef enum Armor_Down_Type
+	{
+		ARMORDOWN_BRONZE,
+		ARMORDOWN_IRON,
+		ARMORDOWN_GOLD,
+		ARMORDOWN_EPIC,
+		ARMORDOWN_END
+	}ARMORDOWN;
+
+private:
+	explicit CItem_Armor_Down(LPDIRECT3DDEVICE9 _pGraphic_Device);
+	virtual ~CItem_Armor_Down() = default;
+
+public:
+	virtual HRESULT				NativeConstruct();
+
+public:
+	virtual HRESULT				Activate(CGameObject* _pTarget);
+
+public:
+	virtual HRESULT				Save_Data(HANDLE _hFile);
+	virtual HRESULT				Load_Data(HANDLE _hFile);
+
+private:
+	ARMORDOWN					m_ArmorDownType;
+
+
+public:
+	static CItem_Armor_Down*	Create(LPDIRECT3DDEVICE9 _pGraphic_Device);
+	virtual void				Free() override;
+};
+
+END

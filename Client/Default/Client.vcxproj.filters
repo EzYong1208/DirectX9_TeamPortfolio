@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="02.GameObjects">
+      <UniqueIdentifier>{680da005-8cbc-4505-8152-b2fdd81d900a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\Item">
+      <UniqueIdentifier>{bb6ef049-975d-4a4c-be3e-684ed1853c40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\Item\00.Useable">
+      <UniqueIdentifier>{16523a64-fda4-4f8b-a063-cbab61189fa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\Item\01.Right">
+      <UniqueIdentifier>{ab85da7b-a577-483a-86dc-cf4bebfd9fa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\Item\02.Left">
+      <UniqueIdentifier>{9f1cb8e8-d500-4b5f-a6c8-911d723347b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\Item\03.Armor">
+      <UniqueIdentifier>{332202df-f837-4ebc-b043-176b09df33a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\Item\04.Accessory">
+      <UniqueIdentifier>{61ab5cbf-d5e0-4e14-9102-6a8267dc6192}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\Item\05.Etc">
+      <UniqueIdentifier>{0c1a3c29-033f-499d-bcfb-7589683b2675}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\NPC">
+      <UniqueIdentifier>{ea1fa47b-fdcb-426d-89fa-5c002c3c49bc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Public\Item_Armor_Up.h">
+      <Filter>02.GameObjects\Item\03.Armor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_BoundingBox.h">
+      <Filter>02.GameObjects\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_Coin.h">
+      <Filter>02.GameObjects\Item\05.Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_Potion.h">
+      <Filter>02.GameObjects\Item\00.Useable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_Armor_Down.h" />
+    <ClInclude Include="..\Public\Item_Bomb.h" />
+    <ClInclude Include="..\Public\Item_Bow.h" />
+    <ClInclude Include="..\Public\Item_Dagger.h" />
+    <ClInclude Include="..\Public\Item_Food.h" />
+    <ClInclude Include="..\Public\Item_Head.h" />
+    <ClInclude Include="..\Public\Item_Lantern.h" />
+    <ClInclude Include="..\Public\Item_Mase.h" />
+    <ClInclude Include="..\Public\Item_Necklace.h" />
+    <ClInclude Include="..\Public\Item_Ring.h" />
+    <ClInclude Include="..\Public\Item_Shield.h" />
+    <ClInclude Include="..\Public\Item_Sword.h" />
+    <ClInclude Include="..\Public\Item_Wand.h" />
+    <ClInclude Include="..\Public\Item_Bone.h">
+      <Filter>02.GameObjects\Item\05.Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_Book.h">
+      <Filter>02.GameObjects\Item\05.Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_RedOrb.h">
+      <Filter>02.GameObjects\Item\05.Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Effect_Flash.h" />
+    <ClInclude Include="..\Public\Npc_GuitarGuy.h">
+      <Filter>02.GameObjects\NPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Npc_Dogo.h">
+      <Filter>02.GameObjects\NPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Npc_Ghost.h">
+      <Filter>02.GameObjects\NPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Npc_Oldman.h">
+      <Filter>02.GameObjects\NPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Npc_ShopGuy.h">
+      <Filter>02.GameObjects\NPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Npc_Wizard.h">
+      <Filter>02.GameObjects\NPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Npc_ShopGuyEpic.h">
+      <Filter>02.GameObjects\NPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_Key.h">
+      <Filter>02.GameObjects\Item\05.Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_LegendWand.h">
+      <Filter>02.GameObjects\Item\01.Right</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_LegendBow.h">
+      <Filter>02.GameObjects\Item\01.Right</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_LegendMase.h">
+      <Filter>02.GameObjects\Item\01.Right</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_LegendSword.h">
+      <Filter>02.GameObjects\Item\01.Right</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Test_Npc.h">
+      <Filter>02.GameObjects\NPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_Head.h">
+      <Filter>02.GameObjects\Item\03.Armor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_Shield.h">
+      <Filter>02.GameObjects\Item\02.Left</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_Ring.h">
+      <Filter>02.GameObjects\Item\04.Accessory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_Necklace.h">
+      <Filter>02.GameObjects\Item\04.Accessory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_Wand.h">
+      <Filter>02.GameObjects\Item\01.Right</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_Mase.h">
+      <Filter>02.GameObjects\Item\01.Right</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_Sword.h">
+      <Filter>02.GameObjects\Item\01.Right</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_Lantern.h">
+      <Filter>02.GameObjects\Item\02.Left</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_Bomb.h">
+      <Filter>02.GameObjects\Item\00.Useable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_Bow.h">
+      <Filter>02.GameObjects\Item\01.Right</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_Dagger.h">
+      <Filter>02.GameObjects\Item\01.Right</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_Food.h">
+      <Filter>02.GameObjects\Item\00.Useable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_Armor_Down.h">
+      <Filter>02.GameObjects\Item\03.Armor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Wooden_Box.h">
+      <Filter>02.GameObjects\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Shop.h">
+      <Filter>02.GameObjects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Private\Item_Armor_Up.cpp">
+      <Filter>02.GameObjects\Item\03.Armor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_BoundingBox.cpp">
+      <Filter>02.GameObjects\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_Coin.cpp">
+      <Filter>02.GameObjects\Item\05.Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_Potion.cpp">
+      <Filter>02.GameObjects\Item\00.Useable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_Armor_Down.cpp" />
+    <ClCompile Include="..\Private\Item_Bomb.cpp" />
+    <ClCompile Include="..\Private\Item_Bow.cpp" />
+    <ClCompile Include="..\Private\Item_Dagger.cpp" />
+    <ClCompile Include="..\Private\Item_Food.cpp" />
+    <ClCompile Include="..\Private\Item_Head.cpp" />
+    <ClCompile Include="..\Private\Item_Lantern.cpp" />
+    <ClCompile Include="..\Private\Item_Mase.cpp" />
+    <ClCompile Include="..\Private\Item_Necklace.cpp" />
+    <ClCompile Include="..\Private\Item_Ring.cpp" />
+    <ClCompile Include="..\Private\Item_Shield.cpp" />
+    <ClCompile Include="..\Private\Item_Sword.cpp" />
+    <ClCompile Include="..\Private\Item_Wand.cpp" />
+    <ClCompile Include="..\Private\Item_Bone.cpp">
+      <Filter>02.GameObjects\Item\05.Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_Book.cpp">
+      <Filter>02.GameObjects\Item\05.Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_RedOrb.cpp">
+      <Filter>02.GameObjects\Item\05.Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Effect_Flash.cpp" />
+    <ClCompile Include="..\Private\Npc_GuitarGuy.cpp">
+      <Filter>02.GameObjects\NPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Npc_Dogo.cpp">
+      <Filter>02.GameObjects\NPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Npc_Ghost.cpp">
+      <Filter>02.GameObjects\NPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Npc_Oldman.cpp">
+      <Filter>02.GameObjects\NPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Npc_ShopGuy.cpp">
+      <Filter>02.GameObjects\NPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Npc_Wizard.cpp">
+      <Filter>02.GameObjects\NPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Npc_ShopGuyEpic.cpp">
+      <Filter>02.GameObjects\NPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_Key.cpp">
+      <Filter>02.GameObjects\Item\05.Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_LegendBow.cpp">
+      <Filter>02.GameObjects\Item\01.Right</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_LegendMase.cpp">
+      <Filter>02.GameObjects\Item\01.Right</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_LegendSword.cpp">
+      <Filter>02.GameObjects\Item\01.Right</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_LegendWand.cpp">
+      <Filter>02.GameObjects\Item\01.Right</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Test_Npc.cpp">
+      <Filter>02.GameObjects\NPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_Head.cpp">
+      <Filter>02.GameObjects\Item\03.Armor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_Shield.cpp">
+      <Filter>02.GameObjects\Item\02.Left</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_Necklace.cpp">
+      <Filter>02.GameObjects\Item\04.Accessory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_Ring.cpp">
+      <Filter>02.GameObjects\Item\04.Accessory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_Mase.cpp">
+      <Filter>02.GameObjects\Item\01.Right</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_Sword.cpp">
+      <Filter>02.GameObjects\Item\01.Right</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_Wand.cpp">
+      <Filter>02.GameObjects\Item\01.Right</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_Lantern.cpp">
+      <Filter>02.GameObjects\Item\02.Left</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_Bomb.cpp">
+      <Filter>02.GameObjects\Item\00.Useable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_Bow.cpp">
+      <Filter>02.GameObjects\Item\01.Right</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_Dagger.cpp">
+      <Filter>02.GameObjects\Item\01.Right</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_Food.cpp">
+      <Filter>02.GameObjects\Item\00.Useable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_Armor_Down.cpp">
+      <Filter>02.GameObjects\Item\03.Armor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Wooden_Box.cpp">
+      <Filter>02.GameObjects\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Shop.cpp">
+      <Filter>02.GameObjects</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{972342B7-BDA8-452A-88F5-44A33CF5ED07}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Client</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\Bin\</OutDir>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;../ImGui/;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;$(LibraryPath)</LibraryPath>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\Bin\</OutDir>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;../ImGui/;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../public/;../../Reference/Inc/</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../../Reference/bin/</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Engine.lib;d3d9.lib;d3dx9.lib;fmod_vc.lib;fmodL_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <FxCompile>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>2.0</ShaderModel>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../public/;../../Reference/Inc/</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../../Reference/bin/</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Engine.lib;d3d9.lib;d3dx9.lib;fmod_vc.lib;fmodL_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <FxCompile>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>2.0</ShaderModel>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Public\Item_Armor_Down.h" />
+    <ClInclude Include="..\Public\Item_Armor_Up.h" />
+    <ClInclude Include="..\Public\Item_Bomb.h" />
+    <ClInclude Include="..\Public\Item_Bone.h" />
+    <ClInclude Include="..\Public\Item_Book.h" />
+    <ClInclude Include="..\Public\Item_BoundingBox.h" />
+    <ClInclude Include="..\Public\Item_Bow.h" />
+    <ClInclude Include="..\Public\Item_Coin.h" />
+    <ClInclude Include="..\Public\Item_Dagger.h" />
+    <ClInclude Include="..\Public\Item_Food.h" />
+    <ClInclude Include="..\Public\Item_Head.h" />
+    <ClInclude Include="..\Public\Item_Key.h" />
+    <ClInclude Include="..\Public\Item_Lantern.h" />
+    <ClInclude Include="..\Public\Item_LegendBow.h" />
+    <ClInclude Include="..\Public\Item_LegendMase.h" />
+    <ClInclude Include="..\Public\Item_LegendSword.h" />
+    <ClInclude Include="..\Public\Item_LegendWand.h" />
+    <ClInclude Include="..\Public\Item_Mase.h" />
+    <ClInclude Include="..\Public\Item_Necklace.h" />
+    <ClInclude Include="..\Public\Item_Potion.h" />
+    <ClInclude Include="..\Public\Item_RedOrb.h" />
+    <ClInclude Include="..\Public\Item_Ring.h" />
+    <ClInclude Include="..\Public\Item_Shield.h" />
+    <ClInclude Include="..\Public\Item_Sword.h" />
+    <ClInclude Include="..\Public\Item_Wand.h" />
+    <ClInclude Include="..\Public\Npc_Dogo.h" />
+    <ClInclude Include="..\Public\Npc_Ghost.h" />
+    <ClInclude Include="..\Public\Npc_GuitarGuy.h" />
+    <ClInclude Include="..\Public\Npc_Oldman.h" />
+    <ClInclude Include="..\Public\Npc_ShopGuy.h" />
+    <ClInclude Include="..\Public\Npc_ShopGuyEpic.h" />
+    <ClInclude Include="..\Public\Npc_Wizard.h" />
+    <ClInclude Include="..\Public\Shop.h" />
+    <ClInclude Include="..\Public\Test_Npc.h" />
+    <ClInclude Include="..\Public\Wooden_Box.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Private\Item_Armor_Down.cpp" />
+    <ClCompile Include="..\Private\Item_Armor_Up.cpp" />
+    <ClCompile Include="..\Private\Item_Bomb.cpp" />
+    <ClCompile Include="..\Private\Item_Bone.cpp" />
+    <ClCompile Include="..\Private\Item_Book.cpp" />
+    <ClCompile Include="..\Private\Item_BoundingBox.cpp" />
+    <ClCompile Include="..\Private\Item_Bow.cpp" />
+    <ClCompile Include="..\Private\Item_Coin.cpp" />
+    <ClCompile Include="..\Private\Item_Dagger.cpp" />
+    <ClCompile Include="..\Private\Item_Food.cpp" />
+    <ClCompile Include="..\Private\Item_Head.cpp" />
+    <ClCompile Include="..\Private\Item_Key.cpp" />
+    <ClCompile Include="..\Private\Item_Lantern.cpp" />
+    <ClCompile Include="..\Private\Item_LegendBow.cpp" />
+    <ClCompile Include="..\Private\Item_LegendMase.cpp" />
+    <ClCompile Include="..\Private\Item_LegendSword.cpp" />
+    <ClCompile Include="..\Private\Item_LegendWand.cpp" />
+    <ClCompile Include="..\Private\Item_Mase.cpp" />
+    <ClCompile Include="..\Private\Item_Necklace.cpp" />
+    <ClCompile Include="..\Private\Item_Potion.cpp" />
+    <ClCompile Include="..\Private\Item_RedOrb.cpp" />
+    <ClCompile Include="..\Private\Item_Ring.cpp" />
+    <ClCompile Include="..\Private\Item_Shield.cpp" />
+    <ClCompile Include="..\Private\Item_Sword.cpp" />
+    <ClCompile Include="..\Private\Item_Wand.cpp" />
+    <ClCompile Include="..\Private\Npc_Dogo.cpp" />
+    <ClCompile Include="..\Private\Npc_Ghost.cpp" />
+    <ClCompile Include="..\Private\Npc_GuitarGuy.cpp" />
+    <ClCompile Include="..\Private\Npc_Oldman.cpp" />
+    <ClCompile Include="..\Private\Npc_ShopGuy.cpp" />
+    <ClCompile Include="..\Private\Npc_ShopGuyEpic.cpp" />
+    <ClCompile Include="..\Private\Npc_Wizard.cpp" />
+    <ClCompile Include="..\Private\Shop.cpp" />
+    <ClCompile Include="..\Private\Test_Npc.cpp" />
+    <ClCompile Include="..\Private\Wooden_Box.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
