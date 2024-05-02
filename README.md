@@ -7,7 +7,6 @@ DirectX SDK9 3D 게임 모작(팀 프로젝트) 입니다.
 - 특정 NPC와의 상호작용을 통하여 상점 기능을 이용할 수 있으며 물건 구입과 판매가 가능하게 구현했습니다.
 - imgui로 만들어진 툴을 이용해 NPC와 아이템들을 배치하고 스테이지 생성 시 저장된 위치에서 불러올 수 있게끔 파일 입출력을 통해 세이브 파일을 만들어 불러오게 구현했습니다.
 
-https://www.youtube.com/watch?v=Di28Ud8U1IY
-
-유튜브 링크 클릭 시 시연한 영상이 나옵니다.
+[![Video Label](http://img.youtube.com/vi/Di28Ud8U1IY/0.jpg)](https://youtu.be/Di28Ud8U1IY)
+###### ▶ 위 이미지는 시연회 유튜브 링크입니다.
 감사합니다.
